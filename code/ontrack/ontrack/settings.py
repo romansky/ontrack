@@ -48,7 +48,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = 'C:/work/ontrack/code/ontrack/media'
+MEDIA_ROOT = 'C:/work/ontrack/git/ontrack/code/ontrack/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -123,7 +123,6 @@ INSTALLED_APPS = (
     'dajaxice',
     'debug_toolbar',
     #'south',
-    'social_auth',
     
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
@@ -132,20 +131,6 @@ INSTALLED_APPS = (
     "theapp",
 )
 
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.google.GoogleOAuth2Backend',
-    )
-
-GOOGLE_OAUTH2_CLIENT_ID = '181888380561.apps.googleusercontent.com'
-GOOGLE_OAUTH2_CLIENT_SECRET = 'yCeo4aVdiA7RXSkIRv0MLA6r'
-#GOOGLE_OAUTH_EXTRA_SCOPE = ""
-
-LOGIN_URL          = '/login-form/'
-LOGIN_REDIRECT_URL = '/logged-in/'
-LOGIN_ERROR_URL    = '/login-error/'
-
-SOCIAL_AUTH_COMPLETE_URL_NAME  = 'socialauth_complete'
-SOCIAL_AUTH_ASSOCIATE_URL_NAME = 'socialauth_associate_complete'
 
 
 
