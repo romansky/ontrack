@@ -1,0 +1,39 @@
+@font-face { font-family: 'Century Gothic'; src: url('http://localhost:8888/ontrack/stylesheets/font.ttf'); } 
+body{
+	font-family: 'Century Gothic';
+}
+
+#topbar{
+	background-color: #263f47;
+	/*height: 40px;*/
+}
+
+#logo h3{
+	color: white;
+	font-family: 'Century Gothic';
+}
+
+#topseperator{
+	height: 100px;
+	font-family: 'Century Gothic';
+}
+
+#leftbox{
+	padding: 50px;
+	height: 285px;
+	font-family: 'Century Gothic';
+}
+
+#leftbox h3{
+	vertical-align: middle;
+	font-family: 'Century Gothic';
+}
+
+#rightbox{
+	padding: 50px;
+	border-left: 1px black solid;
+}
+
+#rightbox h1{
+	font-family: 'Century Gothic';
+}

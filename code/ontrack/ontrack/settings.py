@@ -106,6 +106,8 @@ ROOT_URLCONF = 'ontrack.urls'
 WSGI_APPLICATION = 'ontrack.wsgi.application'
 
 TEMPLATE_DIRS = (
+    "C:/work/ontrack/git/ontrack/code/ontrack/html",
+    "C:/work/ontrack/git/ontrack/code/frontend",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

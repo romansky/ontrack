@@ -7,6 +7,10 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     url(r'^$', 'theapp.views.home', name='home'),
     
+    
+    url(r'^create$', 'theapp.views.create', name='create'),
+    
+    
     url(r'^api/track/(\d+)$', 'theapp.views.track_details', name='track_details'),
     url(r'^api/track/(\d+)/items$', 'theapp.views.track_items', name='track_items'),
     
@@ -28,7 +32,7 @@ urlpatterns = patterns('',
 )
 
 
-urlpatterns +=  patterns(
+urlpatterns +=  patterns("",
                             (r'css/(?P<path>.*)$', 'django.views.static.serve',
                                 {'document_root': r'C:/work/ontrack/git/ontrack/code/ontrack/html/css'}),
                             
@@ -39,8 +43,21 @@ urlpatterns +=  patterns(
                                 {'document_root': r'C:/work/ontrack/git/ontrack/code/ontrack/html/js'}),
                             
                             (r'media/(?P<path>.*)$', 'django.views.static.serve',
-                                {'document_root': r'C:/work/ontrack/git/ontrack/code/ontrack/html/media'}),
+                                {'document_root': r'C:/work/ontrack/git/ontrack/code/ontrack/media'}),
                             
                             (r'fancybox/?(?P<path>.*)$', 'django.views.static.serve',
                                 {'document_root': r'C:/work/ontrack/git/ontrack/code/ontrack/html/fancybox/'}),
-                            )
+
+                            (r'stylesheets/(?P<path>.*)$', 'django.views.static.serve',
+                                {'document_root': r'C:/work/ontrack/git/ontrack/code/frontend/stylesheets'}),
+                            
+                            (r'javascripts/(?P<path>.*)$', 'django.views.static.serve',
+                                {'document_root': r'C:/work/ontrack/git/ontrack/code/frontend/javascripts'}),
+                            
+                            (r'images/(?P<path>.*)$', 'django.views.static.serve',
+                                {'document_root': r'C:/work/ontrack/git/ontrack/code/frontend/images'}),
+                            
+                            
+                        )
+                            
+

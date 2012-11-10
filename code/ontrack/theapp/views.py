@@ -22,12 +22,27 @@ def _format_response(data):
 
 
 def home(request):
-    return HttpResponse("HI there!")
-
+    t = loader.get_template("index.html")
+    c = RequestContext(request, {})
+    return HttpResponse(t.render(c))
 
 
 def post_login(request):
     return HttpResponse("Loginned!")
+
+
+def create(request):
+    """
+    Create a new track page full of awesomeness.
+    """
+    _log("Creating awesomeness!")
+    
+    t = loader.get_template("create.html")
+    c = RequestContext(request, {})
+    return HttpResponse(t.render(c))
+
+
+
 
 ##################
 ###### API

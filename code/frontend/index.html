@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" media="all" href="stylesheets/foundation.min.css" />
+	<link rel="stylesheet" media="all" href="stylesheets/app.css" />
+
+	<script src="javascripts/libs/jquery.min.js" type="text/javascript"></script>
+	<script src="javascripts/libs/underscore.min.js" type="text/javascript"></script>
+	<script src="javascripts/libs/backbone.min.js" type="text/javascript"></script>
+	<script src="javascripts/libs/head.load.min.js" type="text/javascript"></script>
+	<script src="javascripts/viewTrack.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="row contain-to-grid" id="topbar">
+		<div class="nine columns centered" id="logo">
+			<h3>ontrack.io</h3>
+		</div>
+	</div>
+
+	<div class="row" id="topseperator">
+	</div>
+
+	<div class="row">
+		<div class="six columns" id="leftbox">
+			<h3>this text is a description</h3>
+		</div>
+		<div class="six columns" id="rightbox">
+			<ul class="block-grid one-up">
+				<li><h1>ontrack.io</h1></li>
+					<a href="/google_signin"><img src="images/google.png" /></a>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+	window.trackData = {
+		id: 1,
+		title: "test title",
+		description: "test desc",
+		tags: ["test1", "test2", "test3"],
+		level: "test level"
+	}
+	</script>
+
+	<script type="text/template" id="itemTemplate">
+	<div class="item">
+	
+	</div>
+	</script>
+
+	<div id="itemsContainer">
+	</div>
+
+</body>
+</html>
